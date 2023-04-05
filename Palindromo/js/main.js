@@ -22,10 +22,8 @@ function palindromeString(stringa){
     arrayString = stringa.split("");
     reverseArrayString = stringa.split("");
     reverseArrayString = reverseArrayString.reverse();
-        console.log(reverseArrayString);
     let userString = arrayString.toString();
     let reverseUserString = reverseArrayString.toString();
-        console.log(userString + " " + reverseUserString);
     if(userString == reverseUserString){
         return "La parola è palindroma!";
     }
