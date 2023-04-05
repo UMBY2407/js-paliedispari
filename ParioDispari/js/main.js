@@ -1,17 +1,19 @@
 //--------------------------- PROGRAMMA PRINCIPALE ------------------------//
-alert("Benvenuto/a al gioco 'Pari o Dispari'! Prima devi scommettere se il risultato sarà pari o dispari. Quindi scegli un numero da 1 a 5, che verrà poi sommato al numero scelto dalla CPU, se la somma tra i due numeri sarà uguale a alla tua scommessa, allora avrai vinto!")
+    while(true){
+        alert("Benvenuto/a al gioco 'Pari o Dispari'! Prima devi scommettere se il risultato sarà pari o dispari. Quindi scegli un numero da 1 a 5, che verrà poi sommato al numero scelto dalla CPU, se la somma tra i due numeri sarà uguale a alla tua scommessa, allora avrai vinto!")
 
-let userChoice = prompt("Pari o dispari?");
-userChoice = userChoiceValidator(userChoice);
+        let userChoice = prompt("Pari o dispari?");
+        userChoice = userChoiceValidator(userChoice);
 
-let userNumber = prompt("Scegli un numero");
-userNumber = userInputValidator(userNumber);
+        let userNumber = prompt("Scegli un numero");
+        userNumber = userInputValidator(userNumber);
 
-let cpuNumber = cpuRandomNumberGenerator();
-    console.log(cpuNumber);
+        let cpuNumber = cpuRandomNumberGenerator();
+            console.log(cpuNumber);
 
-let winner = matchWinner(userNumber, cpuNumber, userChoice);
-    console.log(winner);
+        let winner = matchWinner(userNumber, cpuNumber, userChoice);
+            console.log(winner);
+    }
 
 
 //--------------------------- FUNZIONI -------------------------------------//
